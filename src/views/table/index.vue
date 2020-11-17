@@ -54,10 +54,10 @@ export default {
         draft: 'gray',
         deleted: 'danger'
       }
-      let s = 'published';
-      if(status === 0){
+      let s = 'published'
+      if (status === 0) {
         s = 'draft'
-      } else if(status === -1){
+      } else if (status === -1) {
         s = 'deleted'
       }
       return statusMap[s]

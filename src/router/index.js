@@ -61,9 +61,21 @@ export const constantRoutes = [
     redirect: '/table',
     children: [{
       path: 'table',
-      name: '网桥',
+      name: 'Table',
       component: () => import('@/views/table/index'),
       meta: { title: 'Bridge', icon: 'table' }
+    }]
+  },
+  {
+    path: '/mytable',
+    component: Layout,
+    name: 'beautifulTable',
+    redirect: '/mytable',
+    children: [{
+      path: 'mytable',
+      name: 'MyTable',
+      component: () => import('@/views/myTable/index'),
+      meta: { title: '网桥', icon: 'table' }
     }]
   },
 
