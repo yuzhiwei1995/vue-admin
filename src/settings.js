@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: '匿名系统I2P网桥后台管理',
 
   /**
    * @type {boolean} true | false
