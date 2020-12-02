@@ -55,17 +55,17 @@ export const constantRoutes = [
     }]
   },
 
-  {
-    path: '/table',
-    component: Layout,
-    redirect: '/table',
-    children: [{
-      path: 'table',
-      name: 'Table',
-      component: () => import('@/views/table/index'),
-      meta: { title: 'Bridge', icon: 'table' }
-    }]
-  },
+  // {
+  //   path: '/table',
+  //   component: Layout,
+  //   redirect: '/table',
+  //   children: [{
+  //     path: 'table',
+  //     name: 'Table',
+  //     component: () => import('@/views/table/index'),
+  //     meta: { title: 'Bridge', icon: 'table' }
+  //   }]
+  // },
   {
     path: '/mytable',
     component: Layout,

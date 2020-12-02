@@ -90,26 +90,10 @@ export default {
           }
         },
         legend: {
-          data: ['expected', 'actual']
+          data: ['expected', '数量']
         },
         series: [{
-          name: 'expected', itemStyle: {
-            normal: {
-              color: '#FF005A',
-              lineStyle: {
-                color: '#FF005A',
-                width: 2
-              }
-            }
-          },
-          smooth: true,
-          type: 'line',
-          data: expectedData,
-          animationDuration: 2800,
-          animationEasing: 'cubicInOut'
-        },
-        {
-          name: 'actual',
+          name: '数量',
           smooth: true,
           type: 'line',
           itemStyle: {
@@ -124,6 +108,22 @@ export default {
               }
             }
           },
+          // {
+          //   name: 'expected', itemStyle: {
+          //     normal: {
+          //       color: '#FF005A',
+          //       lineStyle: {
+          //         color: '#FF005A',
+          //         width: 2
+          //       }
+          //     }
+          //   },
+          //   smooth: true,
+          //   type: 'line',
+          //   data: expectedData,
+          //   animationDuration: 2800,
+          //   animationEasing: 'cubicInOut'
+          // },
           data: actualData,
           animationDuration: 2800,
           animationEasing: 'quadraticOut'
